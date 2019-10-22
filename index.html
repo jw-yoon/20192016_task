@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YUKIKA</title>
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+	
+	body{background-color: black; height: 2500px;}
+	
+	section, footer, h1, div, h2{margin: 0; padding: 0;}
+	.wrap, .wrap4 {width: 1000px;height: 500px; margin: auto; color: black; font-size: 12em; text-align: center; }
+	.wrap4{font-size: 8em;}
+	div{padding-top: 50px;}
+	footer{width: 1000px; height: 100px; margin: auto; margin-top: 80px; text-align: center; color: #DDD;}
+	h1{padding-top: 20px; text-shadow: -6px 0 lightpink,0 6px lightpink, 6px 0 lightpink, 0 -6px lightpink; font-family: 'Reenie Beanie'; margin-bottom: 10px;}
+	h2{text-align: center; font-size: 400px; line-height: 300px; color: white; font-family: 'Reenie Beanie';}
+	
+	.wrap, .wrap1, .wrap2, .dot, .fot, .wrap4{opacity: 0;}
+
+	.wrap1{width: 1000px; margin: auto; padding: block;}
+	.wrap2{width: 1000px; margin: auto; padding: block;}
+	.AAA{margin-bottom: 50px;}
+	.dot{width: 10px;
+		height: 10px;
+		position: absolute;
+		animation: a 15s infinite ease-in;
+		z-index: -1;}
+
+		@keyframes a{from{top:0px; opacity: 0.3;}
+					to{top:100%; opacity: 1; }
+				}
+
+
+</style>
+</head>
+<body>
+	<div>
+		<section class="AAA" id="AA">
+			<h2>Hello, YUKIKA</h2>
+ 		</section>
+ 	</div>
+
+ 	<div>
+ 		<section id="MM" class="wrap1">
+ 			<iframe width="1000" height="510" src="https://www.youtube.com/embed/sAXCxmXi8wA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+ 		</section>
+
+ 		<section class="wrap" id="TT">
+ 			<h1>NEON</h1>
+ 		</section>
+
+ 	</div>
+
+ 	<section id="MMM" class="wrap2">
+ 		<div>
+ 			<iframe width="1000" height="510" src="https://www.youtube.com/embed/UUiTiUwl5ew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 		</div>
+ 	</section>
+
+ 	<section>
+ 		<div class="wrap4" id="TTT">
+ 			<h1>Cherries Jubiles</h1>
+ 		</div>
+ 	</section>
+
+	 <div class="dot" id="Back">
+	 	
+	 </div>
+	 <script type="text/javascript">
+ 		AA.onclick = function(){
+ 			TT.style.opacity = "1";
+ 			TTT.style.opacity = "1";
+ 			MM.style.opacity = "1";
+ 			MMM.style.opacity = "1";
+ 			FF.style.opacity = "1";
+ 			Back.style.opacity = "1";
+
+ 		}
+ 	</script>
+
+	 <script type="text/javascript">
+
+			for(var i=0; i<1000; i++){
+			var s = Back.cloneNode(true);
+			s.id = i;
+			s.style.position = "fixed";
+			s.style.left = 10*i + "px" ;
+			s.style.animationDuration = Math.random()* 10 + "s";
+			s.style.background = randomColor();
+			document.body.appendChild(s);  }
+			function randomColor(){
+			 	var r = Math.random() * 222;
+				 var g = Math.random() * 10;
+				 var b = Math.random() * 222;
+			 	var back = "rgb(" + r + "," + g + "," + b + ")";
+			 return back;
+			}
+		</script>
+
+	 <footer id="FF" class="fot">
+	 	<p>[OFFICIAL]YUKIKA | NEON / [OFFICIAL]YUKIKA | CHERRIES JUBILES<br>
+	 	2019.10.23 Jeongwoon Yoon all rights reserved.
+	 	</p>
+	 </footer>
+ 	
+</body>
+</html>
