@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YUKIKA</title>
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+
+<style type="text/css">
+	
+	body{background-color: black; height: 1000px;}
+	header, section, footer, h1, div, h2{margin: 0; padding: 0;}
+	header{width: 1000px;height: 300px; margin: auto; color: black; font-size: 10em; text-align: center; }
+	section{}
+	footer{width: 1000px; height: 100px; margin: auto; margin-top: 80px; text-align: center; color: #DDD;}
+	h1{padding-top: 20px; text-shadow: -6px 0 lightpink,0 6px lightpink, 6px 0 lightpink, 0 -6px lightpink; font-family: 'Reenie Beanie'; margin-bottom: 10px;}
+	h2{text-align: center; font-size: 450px; color: white; font-family: 'Reenie Beanie';}
+	
+	.wrap, .wrap1, .dot, .fot{opacity: 0;}
+
+	.wrap1{width: 1000px; margin: auto; padding: block;}
+	.dot{width: 10px;
+		height: 10px;
+		position: absolute;
+		animation: a 7s infinite ease-in;
+		z-index: -1;}
+
+		@keyframes a{from{top:0px; opacity: 0.5;}
+					to{top:100%; opacity: 1; }
+				}
+
+
+</style>
+</head>
+<body>
+	<section class="AAA">
+		<div id="AA">
+			<h2>YUKIKA</h2>
+		</div>
+ 	</section>
+
+ 	<section id="MM" class="wrap1">
+ 		<div>
+ 			<iframe width="1000" height="510" src="https://www.youtube.com/embed/sAXCxmXi8wA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+ 		</div>
+ 	</section>
+
+ 	<header>
+ 		<div class="wrap" id="TT">
+ 			<h1>NEON</h1>
+ 		</div>
+ 	</header>
+
+
+	 <div class="dot" id="Back">
+	 	
+	 </div>
+	 <script type="text/javascript">
+ 		AA.onclick = function(){
+ 			TT.style.opacity = "1";
+ 			MM.style.opacity = "1";
+ 			FF.style.opacity = "1";
+ 			Back.style.opacity = "1";
+
+ 		}
+ 	</script>
+
+	 <script type="text/javascript">
+
+			for(var i=0; i<1000; i++){
+			var s = Back.cloneNode(true);
+			s.id = i;
+			s.style.position = "fixed";
+			s.style.left = 10*i + "px" ;
+			s.style.animationDuration = Math.random()* 5 + "s";
+			s.style.background = randomColor();
+			document.body.appendChild(s);  }
+			function randomColor(){
+			 	var r = Math.random() * 222;
+				 var g = Math.random() * 10;
+				 var b = Math.random() * 222;
+			 	var back = "rgb(" + r + "," + g + "," + b + ")";
+			 return back;
+			}
+		</script>
+
+	 <footer id="FF" class="fot">
+	 	<p>[OFFICIAL]YUKIKA | NEON<br>
+	 	2019.10.23 Jeongwoon Yoon all rights reserved.
+	 	</p>
+	 </footer>
+ 	
+</body>
+</html>
